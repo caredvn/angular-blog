@@ -1,0 +1,8 @@
+<header [ngStyle]="{'background-color': openedBg}">
+    <app-menu-title></app-menu-title>
+    <app-menu (click)="updadeHeaderBg()"></app-menu>
+</header>
+<main>
+    <div class="overlay" *ngIf="menuService.listIsPresent"></div>
+    <app-banner></app-banner>
+</main>

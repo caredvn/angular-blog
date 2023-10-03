@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+
+.menu-title__container {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.5em;
+    display: flex;
+}
+
+.menu-title__container > div {
+    height: 1.25em;
+    width: 1.5em;
+    background-image: url(../../../logo.svg);
+    background-repeat: no-repeat;
+    background-size: 1.5em;
+}
+
+@media screen and (min-width: 940px) {
+    .menu-title__container {
+        font-size: 2.5em;
+        justify-content: center;
+        margin: 0 auto;
+        width: 60%;
+        border-bottom: 1px solid #533848;
+    }
+}

@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+
+.banner__container {
+    width: 100%;
+    position: relative;
+    margin-top: 7rem;
+    color: #e2e2e2;
+}
+
+.banner__img > img {
+    width: 100%;
+    object-fit: cover;
+    object-position: 60% 55%;
+    height: 350px;
+}
+
+.banner__content {
+    position: absolute;
+    bottom: 0;
+    padding: 1.25em 1em;
+    display: flex;
+    flex-direction: column;
+    background-color: #00000085;
+    gap: 1em;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.banner__content > h2 {
+    font-size: 1.5em;
+}
+
+.banner__details {
+    display: flex;
+    font-weight: 100;
+    font-size: .875em;
+}
+
+.details__genre::before, .details__duration::before {
+    content: "";
+    padding: 1px;
+    vertical-align: middle;
+    background-color: #B08893;
+    height: 1px;
+    display: inline-block;
+    border-radius: 60%;
+    margin: 0 .5em;
+    width: 1px;
+}
+
+.banner__review {
+    letter-spacing: .025em;
+}
+
+@media screen and (min-width: 768px) {
+    .banner__container {
+        margin-top: 9rem;
+    }
+    
+    .banner__content {
+        gap: 1.5em;
+        width: 40%;
+        right: 60%;
+        height: 100%;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 940px) {
+    .banner__container {
+        margin-top: 0;
+    }
+
+    .banner__content > h2 {
+        font-size: 2em;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .banner__img > img {
+        height: 450px;
+    }
+
+    .banner__content > h2 {
+        font-size: 2.5em;
+    }
+
+    .banner__review {
+        width: 80%;
+    }
+}
