@@ -11,6 +11,9 @@ import { CategoryComponent } from './components/category/category.component';
 import { BigCardComponent } from './components/big-card/big-card.component';
 import { SmallCardComponent } from './components/small-card/small-card.component';
 import { HomeComponent } from './pages/home/home.component';
+import { TvShowsComponent } from './pages/tv-shows/tv-shows.component';
+import { ShowsComponent } from './components/shows/shows.component';
+import { ShowCardComponent } from './components/show-card/show-card.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,10 @@ import { HomeComponent } from './pages/home/home.component';
     CategoryComponent,
     BigCardComponent,
     SmallCardComponent,
-    HomeComponent
+    HomeComponent,
+    TvShowsComponent,
+    ShowsComponent,
+    ShowCardComponent
   ],
   imports: [
     BrowserModule,

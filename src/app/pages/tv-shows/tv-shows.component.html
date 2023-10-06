@@ -1,0 +1,12 @@
+<header [ngStyle]="{'background-color': openedBg}">
+    <app-menu-title></app-menu-title>
+    <app-menu (click)="updadeHeaderBg()"></app-menu>
+</header>
+<main>
+    <div class="overlay" *ngIf="menuService.listIsPresent"></div>
+    <section class="shows">
+        <app-shows *ngFor="let streaming of streamingList"
+            showsTitle="{{ streaming }}"
+        ></app-shows>
+    </section>
+</main>

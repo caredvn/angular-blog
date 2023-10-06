@@ -6,7 +6,9 @@
 }
 
 .menu__toggle {
-    display: block;
+    display: flex;
+    height: 3rem;
+    align-items: center;
 }
 
 .menu__list__container {
@@ -35,6 +37,12 @@
 .menu__item > a {
     color: #7F7F7F;
     text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+    .menu__toggle {
+        height: 3.75rem;
+    }
 }
 
 @media screen and (min-width: 940px) {

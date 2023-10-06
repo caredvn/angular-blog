@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { MenuService } from '../../components/menu/menu.service';
 
 @Component({
@@ -17,8 +17,17 @@ export class HomeComponent implements OnInit {
   updadeHeaderBg() {
     if(this.menuService.listIsPresent) {
       this.openedBg = '#1D1D1D'
+    }
+  }
+
+  @HostListener('window:scroll', ['$event'])
+  onScroll(event: Event): void {
+    const scrollPosition = window.scrollY;
+    
+    if (scrollPosition > 100) {
+      this.openedBg = '#1D1D1D';
     } else {
-      this.openedBg = 'transparent'
+      this.openedBg = 'transparent';
     }
   }
 

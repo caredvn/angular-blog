@@ -1,0 +1,88 @@
+.show-card__container {
+    min-width: 260px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.show-card__container > a {
+    color: inherit;
+}
+
+.show-card__img > img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+    object-position: 50% 10%;
+}
+
+.show-card__content {
+    position: absolute;
+    bottom: 0;
+    padding: 1em 1em;
+    display: flex;
+    background-color: #00000085;
+    gap: .5em;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 1.25em;
+    justify-content: space-between;
+    flex-direction: column;
+    line-height: 1.5em;
+    align-items: center;
+}
+
+.show-card__title {
+    max-height: 3rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 30%;
+    white-space: nowrap;
+}
+
+.show-card__details {
+    font-size: .65em;
+    display: flex;
+    align-items: center;
+}
+
+.details__star> svg {
+    color: #B08893;
+    display: flex;
+}
+
+.details__rate::after {
+    content: 'IMDb';
+    color: #7F7F7F;
+    font-weight: 100;
+    padding-left: .25rem;
+}
+
+.details__year::before {
+    content: "";
+    padding: 1px;
+    vertical-align: middle;
+    background-color: #B08893;
+    height: 1px;
+    display: inline-block;
+    border-radius: 60%;
+    margin: 0 .5em;
+    width: 1px;
+}
+
+@media screen and (min-width: 426px) {
+    .show-card__container {
+        margin: 0;
+    }
+
+    .show-card__content {
+        flex-direction: row;
+    }
+
+    .show-card__details {
+        min-width: 67%;
+        justify-content: flex-end;
+    }
+}
+
+

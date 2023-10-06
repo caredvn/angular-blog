@@ -1,5 +1,6 @@
 import { Component, OnInit, HostListener} from '@angular/core';
 import { MenuService } from './menu.service';
+import { dataFake } from '../../data/dataFake'
 
 @Component({
   selector: 'app-menu',

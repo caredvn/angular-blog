@@ -3,6 +3,7 @@ header {
     justify-content: space-between;
     padding: 1.25em 1em;
     position: fixed;
+    z-index: 1;
     width: 100%;
     box-sizing: border-box;
     top: 0;
@@ -15,7 +16,14 @@ header {
     height: 100%;
     z-index: 2;
     background-color: #00000075;
-    position: absolute;
+    position: fixed;
+}
+
+.shows {
+    margin: 5em 0 5em 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
 }
 
 @media screen and (min-width: 768px) {
@@ -26,7 +34,6 @@ header {
     app-menu {
         width: 40%;
     }
-
 }
 
 @media screen and (min-width: 940px) {
@@ -38,6 +45,15 @@ header {
 
     app-menu {
         margin: 0 auto;
+    }
+
+    main {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .shows {
+        margin: 0 0 5em 0;
     }
 }
 

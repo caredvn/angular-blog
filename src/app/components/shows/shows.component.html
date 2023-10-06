@@ -1,0 +1,16 @@
+<div class="shows__container">
+    <h2 class="shows__title">{{ showsTitle }}</h2>
+    <ul class="shows__list">
+        <li  *ngFor="let showCard of showCardList">
+            <app-show-card
+                ShowCardId="{{ showCard.id}}"
+                showCardImg="{{ showCard.image }}"
+                showCardAlt="{{ showCard.alt }}"
+                showCardTitle="{{ showCard.title }}"
+                showCardRate="{{ showCard.rate }}"
+                showCardYear="{{ showCard.year }}"
+            ></app-show-card>
+
+        </li>
+    </ul>
+</div>
