@@ -14,6 +14,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { TvShowsComponent } from './pages/tv-shows/tv-shows.component';
 import { ShowsComponent } from './components/shows/shows.component';
 import { ShowCardComponent } from './components/show-card/show-card.component';
+import { MoviesComponent } from './pages/movies/movies.component';
+import { WatchListComponent } from './pages/watch-list/watch-list.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { ShowCardComponent } from './components/show-card/show-card.component';
     HomeComponent,
     TvShowsComponent,
     ShowsComponent,
-    ShowCardComponent
+    ShowCardComponent,
+    MoviesComponent,
+    WatchListComponent
   ],
   imports: [
     BrowserModule,

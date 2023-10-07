@@ -3,9 +3,9 @@
     <div class="menu__list__container" [ngClass]="{'opened-menu': openedMenu}">
         <ul class="menu__list" [ngStyle]="{'display': showList}">
             <li class="menu__item"><a [routerLink]="['']">Home</a></li>
-            <li class="menu__item"><a href="#">Movies</a></li>
+            <li class="menu__item"><a [routerLink]="['movies']">Movies</a></li>
             <li class="menu__item"><a [routerLink]="['tv-shows']">TV Shows</a></li>
-            <li class="menu__item"><a href="#">Watch List</a></li>
+            <li class="menu__item"><a [routerLink]="['watch-list']">Watch List</a></li>
         </ul>
     </div>
 </div>
