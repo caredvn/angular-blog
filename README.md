@@ -1,1 +1,1 @@
-# Pure Reel - A watched and ranked tv shows blog -- WIP
+# Pure Reel - A tv shows blog -- WIP
